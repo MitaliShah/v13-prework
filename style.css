@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+  background-color: white;
+  color: black;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/**Header**/
+
+header{
+  border-bottom: 1px solid lightgrey;
+}
+
+#header-nav{
+  margin: 26px auto;
+}
+
+#header-nav, #header-nav-ul{
+  display: flex;
+  color: rgb(107, 107, 107);
+  font-weight: bolder;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+#light{
+  color: rgb(136, 135, 135);
+  font-weight: normal;
+}
+
+#header-nav-ul li a{
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+  padding: .8em .8em;
+}
+
+#catalog-link a:link{
+  color: tomato;
+}
+
+/**Main**/
+
+main{
+  margin: 1.5em auto;
+}
+
+#main-nav{
+  display: flex;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+}
+
+input[type="text"]{
+  border: none;
+  border-right: 1px solid grey;
+  margin: 12px;  
+  text-align: center;
+  flex: 2;
+}
+
+select{
+  border: none;
+  /* margin: 15px; */
+  padding: 15px;
+  -webkit-appearance: none;
+  text-align: center;
+  flex: 0;
+}
+
+input:focus, select{
+  outline:none;
+}
+
+.font-size-option{
+  text-align: center;
+}
+
+#main-custom-options{
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  flex: 1 1 200px;
+  justify-content: space-around;
+}
+
+#dark-light-container{
+
+}
+
+#black, #white{
+  border-radius: 50%;
+  display: inline-flex;
+  height: 15px;
+  width: 15px;  
+}
+
+#white{
+  border: 1px solid grey;
+}
+
+#black{
+  background-color: black;
+}
+
+#white{
+  background-color: white;
+}
+
+#adjust-grid, #reset{
+  background: none;
+  border: none;
+}
+
+
+
+/**media query**/
+@media screen and (max-width: 800px) {
+  input[type="text"]{
+    border-right: none;
+  }
+
+  #custom-text, #font-size, #dark-light-container, #adjust-grid{
+    display: none;
+  }
+
+  #search-fonts{
+    flex: 2;
+  }
+
+  #reset{
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  #header-nav{
+    display: inline-block;    
+  }
+
+  #header-nav-ul{
+    font-size: 12px;
+  }
+
+}
