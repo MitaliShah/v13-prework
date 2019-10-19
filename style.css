@@ -91,10 +91,6 @@ input:focus, select{
   justify-content: space-around;
 }
 
-#dark-light-container{
-
-}
-
 #black, #white{
   border-radius: 50%;
   display: inline-flex;
@@ -119,7 +115,51 @@ input:focus, select{
   border: none;
 }
 
+/**font-card**/
 
+#font-card-main-container{
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-card{
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 0 15px;
+  border-top: 1px solid black;
+}
+
+.font-card-info{
+  display: inline-flex;
+}
+
+.plus-icon{
+  border: none;
+  background: none;
+  color: tomato;
+  font-size: 15px;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px auto;
+}
+
+.font-preview{
+  display: flex;
+  padding-top: 2em;
+  font-size: 2em;
+}
+
+.font-preview p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /**media query**/
 @media screen and (max-width: 800px) {
