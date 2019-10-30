@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {  
+  --background-color: white;
+  --font-color: black;
+}
+
+.dark-mode {
+  --background-color: black;
+  --font-color: white;
+}
+
 body {
-  background-color: white;
-  color: black;
+  background-color: var(--background-color, white);
+  color: var(--font-color,black);
   max-width: 90%;
   margin: 0 auto;
 }
@@ -100,18 +110,16 @@ select {
   display: inline-flex;
   height: 15px;
   width: 15px;
-}
-
-#white {
   border: 1px solid grey;
-}
-
-#black {
-  background-color: black;
 }
 
 #white {
   background-color: white;
+}
+
+#black {
+  background-color: black;
+  
 }
 
 #adjust-grid,

@@ -63,5 +63,26 @@ function reset(){
 
 resetButton.onclick = reset;
 
+//dark/light mode
+
+const light = document.getElementById("white");
+const dark = document.getElementById("black");
+
+//dark
+function turnOnDarkMode() {
+  document.documentElement.style.setProperty('--background-color', 'black');
+  document.documentElement.style.setProperty('--font-color', 'white');
+
+}
+
+dark.addEventListener("click", turnOnDarkMode);
+
+//light
+function turnOnLightMode() {
+  document.documentElement.style.setProperty('--background-color', 'white');
+  document.documentElement.style.setProperty('--font-color', 'black');
+}
+
+light.addEventListener("click", turnOnLightMode);
 
 
