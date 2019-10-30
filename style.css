@@ -79,11 +79,10 @@ input[type="text"] {
 
 select {
   border: none;
-  /* margin: 15px; */
   padding: 15px;
   -webkit-appearance: none;
   text-align: center;
-  flex: 0;
+  flex: 1;
 }
 
 input:focus,
@@ -100,7 +99,7 @@ select {
   align-items: center;
   justify-content: flex-end;
   margin-left: auto;
-  flex: 1 1 200px;
+  flex: 2 2 200px;
   justify-content: space-around;
 }
 
