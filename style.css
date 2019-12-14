@@ -54,7 +54,7 @@ header {
 }
 
 #header-nav-ul li:first-child a {
-  color: tomato;
+  color: #006699;
 }
 
 /**Main**/
@@ -117,8 +117,7 @@ select {
 }
 
 #black {
-  background-color: black;
-  
+  background-color: black;  
 }
 
 #adjust-grid,
@@ -153,7 +152,7 @@ select {
 .plus-icon {
   border: none;
   background: none;
-  color: tomato;
+  color: #006699;
   font-size: 15px;
   margin-left: auto;
   position: absolute;
@@ -182,7 +181,7 @@ footer{
 
 footer a{
   text-decoration: none;
-  color: tomato;
+  color: #006699;
   cursor: pointer;
 }
 

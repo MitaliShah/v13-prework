@@ -85,4 +85,16 @@ function turnOnLightMode() {
 
 light.addEventListener("click", turnOnLightMode);
 
+//change display icon to flip between a grid and list layout for the font cards
+
+const grid = document.getElementById("adjust-grid");
+const fontCard = document.getElementsByClassName("font-card");
+
+function adjustGrid(){
+  for (i = 0; i < fontCard.length; i++) {
+    fontCard[i].style.width = "100%";
+  }  
+}
+
+grid.addEventListener("click", adjustGrid);
 
