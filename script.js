@@ -103,9 +103,9 @@ grid.addEventListener("click", adjustGrid);
 
 
 //fetch google fon api
-
-const API_KEY = 'AIzaSyCQ0Kc3eH94rnd1JLupRe4tAZXDamnLP88';
+const API_KEY = config.API_KEY;
 const FETCHURL = `https://www.googleapis.com/webfonts/v1/webfonts?key=${API_KEY}&sort=popularity`;
+const sectionFontCard = document.querySelector("#font-card-main-container");
 
 function fetchData(){
   fetch(FETCHURL)
@@ -117,9 +117,7 @@ function fetchData(){
     })
     .then(data => {
 
-      const html = data.items.map(item => {
-
-        const sectionFontCard = document.querySelector("#font-card-main-container");
+      const html = data.items.map(item => {       
 
         //Create div for font card
         const fontCardDiv = document.createElement('div');
@@ -165,12 +163,12 @@ function fetchData(){
         fontPreviewDivPara.innerHTML = `Then come the night of the first falling star.`
         fontPreviewDivPara.style.fontFamily = `${item.family}`;
 
-        fontPreviewDiv.append(fontPreviewDivPara);        
+        fontPreviewDiv.append(fontPreviewDivPara);  
+       
          
       })
       .join(" ");
-      // document.querySelector("#font-card-main-container").insertAdjacentHTML("afterbegin", html);
-      // sectionFontCard.append(html);
+
       return sectionFontCard.append(html);
       
       
